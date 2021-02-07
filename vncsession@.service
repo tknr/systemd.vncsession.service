@@ -40,6 +40,7 @@ KillMode=control-group
 KillSignal=SIGTERM
 ExecStart=/usr/sbin/vncsession %i :1
 ExecStop=pkill -f vncsession
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
