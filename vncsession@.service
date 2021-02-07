@@ -34,7 +34,7 @@ Description=Remote desktop service (VNC)
 After=syslog.target network.target
 
 [Service]
-Type=oneshot
+Type=simple
 RemainAfterExit=yes
 KillMode=control-group
 KillSignal=SIGTERM
